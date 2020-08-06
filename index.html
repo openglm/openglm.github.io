@@ -12,59 +12,98 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
- 
+
     <title>Open GLM</title>
 </head>
 
 <body>
-    <div id="wrapper" class="d-flex">
-        <section id="left-section">
+    <div class="d-none d-lg-block">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark shadow py-4" id="top-nav">
+        <a class="navbar-brand" href="#">Open GLM</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse m-l-nav" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    
+                    <a href="#setup-window" class="nav-link" href="#">Get Start</a>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link" href="#request-window"> Request customization </a>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link" href="#contribute-window"> How to contribute?</a>
+                </li> 
+            </ul>
+
+        </div>
+    </nav>
+</div>
+    <div id="wrapper" class="d-flex mt-lg-5">
+        <section id="left-section" class="mt-lg-4">
             <button class="btn btn-info left-btn p-1"> <i class="menu"></i>
                 <i class="menu"></i>
                 <i class="menu"></i> </button>
             <div class="position-fixed innerbox">
-                <div class="detail-header d-flex justify-content-between align-items-center">
+                <!-- <div class="detail-header d-flex justify-content-between align-items-center">
                     <h5 class="mb-0 pl-3">Open GLM </h5>
-                </div> 
+                </div> -->
 
                 <ul class="px-3 list-search mt-4">
                     <li>
                         <a href="#intro-window"> Introduction </a>
                     </li>
-                    <li>
-                        <a href="#chat-window"> Single Chat Window </a>
+                    <li class="drop-downlist">
+                        <a class="d-flex justify-content-between align-items-center">
+                            <span> Features </span>
+                            <span class="arrow"></span>
+                        </a>
+
+                        <ul class="dropdown-menu-custom">
+                            <li>
+                                <a href="#chat-window"> Single Chat Window </a>
+                            </li>
+
+                            <li>
+                                <a href="#share-window"> Screen Share Message </a>
+                            </li>
+                            <li>
+                                <a href="#action-window"> Hide/Show Action and Navigation Bar </a>
+                            </li>
+
+                            <li>
+                                <a href="#chat-option-window"> Right Side Chat Window </a>
+                            </li>
+                            <li>
+                                <a href="#zoom-window"> Single Zoom Button </a>
+                            </li>
+
+                            <li>
+                                <a href="#leave-window"> Leave Meeting Button </a>
+                            </li>
+                            <li>
+                                <a href="#info-window"> Meeting Info </a>
+                            </li>
+                        </ul>
                     </li>
 
-                    <li>
-                        <a href="#share-window"> Screen Share Message </a>
-                    </li>
-                    <li>
-                        <a href="#action-window"> Hide/Show Action and Navigation Bar </a>
-                    </li>
+
 
                     <li>
-                        <a href="#chat-option-window"> Right Side Chat Window </a>
-                    </li>
-                    <li>
-                        <a href="#zoom-window"> Single Zoom Button </a>
-                    </li>
-
-                    <li>
-                        <a href="#leave-window"> Leave Meeting Button </a>
-                    </li>
-                    <li>
-                        <a href="#info-window"> Meeting Info </a>
-                    </li>              
-
-                    <li>
-                        <a href="#setup-window"> Quick Start </a>
+                        <a href="#setup-window"> Get Start </a>
                     </li>
 
                     <li>
                         <a href="#request-window"> Request customization </a>
                     </li>
 
-                   
+
 
                     <li>
                         <a href="#subscribe-window"> Subscribe for updates
@@ -76,7 +115,7 @@
 
                         </a>
                     </li>
- 
+
                     <li>
                         <a href="#gitHub-window"> GitHub Repository
 
@@ -88,216 +127,254 @@
                         </a>
                     </li>
 
-                    
+
 
                 </ul>
             </div>
         </section>
-        <section id="right-section">
-            <div id="intro-window" class="pt-4">
-                <h1 class="main-heading">Introduction</h1>
+        <section id="right-section" class=" mt-4 mt-lg-4">
 
-                <div class="w-80">
+            <div class="inner-box">
+                <div id="intro-window" class="">
 
-                    <h4 class="font-weight-300 my-4">Open GLM is an open source web conference system built on top of BigBlueButton. Open GLM has been developed with the aim to customize BigBlueButton for online educational institutions and businesses. Moreover, the customized code of OpenGLM is offered as an open-source as a contribution to the community.</h4>
+                    <div class="w-80">
 
-                    <h5 class="font-weight-300 mb-4"> BigBlueButton is one of the best open source web conferencing software which is being integrated with many applications. While customizing BigBlueButton for few of the companies, it was observed that there could be few customizations which would not be acceptable directly by the BigBlueButton. Therefore, all those customizations have made open sourced here on this project if anyone wishes to use them.
-                    </h5>
+                        <h5 class="font-weight-300 mb-4">Open GLM is an open source web conference system built on top
+                            of
+                            BigBlueButton. Open GLM has been developed with the aim to customize BigBlueButton for
+                            online
+                            educational institutions and businesses. Moreover, the customized code of OpenGLM is offered
+                            as
+                            an open-source as a contribution to the community.</h5>
 
-                    <h5 class="font-weight-300 mb-4">We will also try to submit our implementation to BigBlueButton main repository from time to time or  as and when requested by any of our users.
-                    </h5>                   
+                        <h5 class="font-weight-300 mb-4"> BigBlueButton is one of the best open source web conferencing
+                            software which is being integrated with many applications. While customizing BigBlueButton
+                            for
+                            few of the companies, it was observed that there could be few customizations which would not
+                            be
+                            acceptable directly by the BigBlueButton. Therefore, all those customizations have made open
+                            sourced here on this project if anyone wishes to use them.
+                        </h5>
+
+                        <h5 class="font-weight-300 mb-4">We will also try to submit our implementation to BigBlueButton
+                            main
+                            repository from time to time or as and when requested by any of our users.
+                        </h5>
+
+                    </div>
 
                 </div>
+                <div id="features">
+                <h5>Below are the customizations which have been developed for Open GLM</h5>
+                <h3 class="pt-4">Custom Features</h3>
+                <div id="chat-window" class="section-gap pt-4">
+                    <div class="w-80">
+                        <div class="">
 
-            </div>
-            <h4>Below are the customizations which have been developed for Open GLM</h4>
-            <h2 class="pt-4">Custom Features:-</h2>
-            <div id="chat-window" class="section-gap pt-4">
-                <div class="w-80">
-                    <div class="">
+                            <h4 class="text-uppercase mb-3">Single Chat Window</h4>
+                            <h5 class="font-weight-300 mb-4 w-80"> Single chat window is provided, instead of a separate
+                                window for each user. It becomes difficult sometimes for users to chat with multiple
+                                users at a time. Especially for teachers where multiple students ask questions or send
+                                messages.</h5>
 
-                        <h4 class="text-uppercase mb-3">Single Chat Window</h4>
-                        <h5 class="font-weight-300 mb-4 w-80"> Single chat window is provided, instead of a separate
-                            window for each user. It becomes difficult sometimes for users to chat with multiple
-                            users at a time. Especially for teachers where multiple students ask questions or send
-                            messages.</h5>
-
-                        <img src="images/right-penal.png" alt="">
+                            <img src="images/right-penal.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div id="share-window" class="section-gap">
-                <div class="w-80">
-                    <div>
+                <div id="share-window" class="section-gap">
+                    <div class="w-80">
                         <div>
-                            <h4 class="text-uppercase mb-3">Screen Share Message</h4>
-                            <h5 class="font-weight-300 mb-4 w-80">
-                                When screen is shared, and browser tab is opened. It shows repeated screens, each below the other one. To avoid the issue, a message window is shown similar to the one in  Google Meet
+                            <div>
+                                <h4 class="text-uppercase mb-3">Screen Share Message</h4>
+                                <h5 class="font-weight-300 mb-4 w-80">
+                                    When screen is shared, and browser tab is opened. It shows repeated screens, each
+                                    below
+                                    the other one. To avoid the issue, a message window is shown similar to the one in
+                                    Google Meet
 
+                                </h5>
+                            </div>
+                            <img src="images/share.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="action-window" class="section-gap">
+                    <div class="w-80">
+                        <div>
+                            <h4 class="text-uppercase mb-3">Hide/Show Action and Navigation Bar </h4>
+                            <h5 class="font-weight-300 mb-4 w-80">
+                                To maximize meeting area, navigation and action panels are animated to show and hide
+                                based
+                                on mouse movement.
                             </h5>
                         </div>
-                        <img src="images/share.png" alt="">
+                        <div class="d-flex flex-wrap">
+                            <img src="images/action-1.png" class="w-100" alt="">
+                            <img src="images/action-2.png" alt="" class="w-100">
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div id="action-window" class="section-gap">
-                <div class="w-80">
-                    <div>
-                        <h4 class="text-uppercase mb-3">Hide/Show Action and Navigation Bar </h4>
-                        <h5 class="font-weight-300 mb-4 w-80">
-                            To maximize meeting area, navigation and action panels are animated to show and hide based
-                            on mouse movement.
-                        </h5>
-                    </div>
-                    <div class="d-flex flex-wrap">
-                        <img src="images/action-1.png" class="w-100" alt="">
-                        <img src="images/action-2.png" alt="" class="w-100">
-                    </div>
-                </div>
-            </div>
-
-            <div id="chat-option-window" class="section-gap">
-                <div class="w-80">
-                    <div>
-                        <h4 class="text-uppercase mb-3">Right Side Chat Window</h4>
-                        <h5 class="font-weight-300 w-80 mb-0">
-                            Chat window is moved towards right from left - similar to how it is in different web conferencing systems for better usability.
-                        </h5>
-                    </div>
-
-                </div>
-            </div>
-
-            <div id="zoom-window" class="section-gap">
-                <div class="w-80">
-                    <div>
-                        <h4 class="text-uppercase mb-3">Single Zoom Button</h4>
-                        <h5 class="font-weight-300 mb-4 w-80">
-                            A single button added for zoom in/out entire screen rather than individual control/elements
-                            of meeting.
-                        </h5>
-                    </div>
-                    <div class="d-flex flex-wrap">
-                        <img src="images/zoom.png" alt="">
+                <div id="chat-option-window" class="section-gap">
+                    <div class="w-80">
+                        <div>
+                            <h4 class="text-uppercase mb-3">Right Side Chat Window</h4>
+                            <h5 class="font-weight-300 w-80 mb-0">
+                                Chat window is moved towards right from left - similar to how it is in different web
+                                conferencing systems for better usability.
+                            </h5>
+                        </div>
 
                     </div>
                 </div>
-            </div>
 
+                <div id="zoom-window" class="section-gap">
+                    <div class="w-80">
+                        <div>
+                            <h4 class="text-uppercase mb-3">Single Zoom Button</h4>
+                            <h5 class="font-weight-300 mb-4 w-80">
+                                A single button added for zoom in/out entire screen rather than individual
+                                control/elements
+                                of meeting.
+                            </h5>
+                        </div>
+                        <div class="d-flex flex-wrap">
+                            <img src="images/zoom.png" alt="">
 
-            <div id="leave-window" class="section-gap">
-                <div class="w-80">
-                    <div>
-                        <h4 class="text-uppercase mb-3">Leave Meeting Button</h4>
-                        <h5 class="font-weight-300 mb-4 w-80">
-                            Customized button to leave/end meeting in action bar. In the current implementation of BigBlueButton it is added under settings icon.
-                        </h5>
-                    </div>
-                    <div class="d-flex flex-wrap">
-                        <img src="images/buttons.png" alt="">
-                    </div>
-                </div>
-            </div>
-
-            <div id="info-window" class="section-gap">
-                <div class="w-80">
-                    <div>
-                        <h4 class="text-uppercase mb-3">Meeting Info</h4>
-                        <h5 class="font-weight-300 mb-4 w-80">
-                            Customized a message box for users to see and share meeting information.
-                        </h5>
-                    </div>
-                    <div class="d-flex flex-wrap">
-                        <img src="images/info.png" alt="">
+                        </div>
                     </div>
                 </div>
+
+
+                <div id="leave-window" class="section-gap">
+                    <div class="w-80">
+                        <div>
+                            <h4 class="text-uppercase mb-3">Leave Meeting Button</h4>
+                            <h5 class="font-weight-300 mb-4 w-80">
+                                Customized button to leave/end meeting in action bar. In the current implementation of
+                                BigBlueButton it is added under settings icon.
+                            </h5>
+                        </div>
+                        <div class="d-flex flex-wrap">
+                            <img src="images/buttons.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="info-window" class="section-gap">
+                    <div class="w-80">
+                        <div>
+                            <h4 class="text-uppercase mb-3">Meeting Info</h4>
+                            <h5 class="font-weight-300 mb-4 w-80">
+                                Customized a message box for users to see and share meeting information.
+                            </h5>
+                        </div>
+                        <div class="d-flex flex-wrap">
+                            <img src="images/info.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div id="setup-window" class="section-gap">
+                    <h2 class="pt-4">Get Start </h2>
+
+                    <h5 class="font-weight-300 mb-4"> Majority of the customization is done on the HTML5 client,
+                        therefore,
+                        in order to set up this version you need to find a suitable version of the entire project or use
+                        version 2.2-dev and follow the below steps.
+
+                    </h5>
+
+                    <fieldset>
+                        <legend>Steps:</legend>
+             
+                        <ol type="1" class="list-custom">
+                            <li >Clone bigbluebutton repository from
+                                <a
+                                    href="https://github.com/openglm/bigbluebutton">https://github.com/openglm/bigbluebutton</a>.
+                            </li>
+                            <li >Change directory to bigbluebutton-html5.
+                            </li>
+                            <li >Install meteor ( <a
+                                    href="https://www.meteor.com/install">https://www.meteor.com/install</a>):
+                                curl https://install.meteor.com/ | sh
+                            </li>
+                            <li >
+                                Update below configuration located in /cloned_code_folder/private/config/settings.yml:
+                                Kurento -> wsUrl
+                                Note -> url
+                                (Note: we can get the current configuration located in
+                                /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml)
+
+                            </li>
+                            <li >Build the project :
+                                meteor build --directory ../app
+                            </li>
+                            <li > Install dependencies:
+                                cd ~/app/bundle/programs/server && npm install
+                            </li>
+                            <li > Copy the bundle to the deployment location:
+                                sudo cp -r ~/app/bundle/* /usr/share/meteor/bundle/
+                            </li>
+                            <li > Restart the bbb-html5 service:
+                                sudo systemctl restart bbb-html5
+                            </li>
+
+                        </ol>
+                    </fieldset>
+                </div>
+
+                <div id="request-window" class="section-gap">
+                    <h2 class="pt-4">Request Customization</h2>
+
+                    <h5 class="font-weight-300 mb-4"> Please raise an issue on our github repository if you find any
+                        problems or need additional customization. We prioritize issues and assure to reach out to the
+                        community if anyone is interested to help with customization. You can also request for a custom
+                        development from experts who are part of our community. They will be happy to assist you with
+                        your
+                        requests.
+                    </h5>
+
+                    <h5 class="font-weight-300">
+                        Please send out the custom development needs to
+                        <a href="mailto:openglm.connect@gmail.com">openglm.connect@gmail.com</a>
+                        and experts from the community will approach you soon. They may charge for custom development or
+                        offer you alternatives.
+                    </h5>
+                </div>
+
+                <div id="contribute-window" class="section-gap">
+                    <h2 class="pt-4">How to contribute?</h2>
+
+                    <h5 class="font-weight-300 mb-4"> If you want to join our community and help us in improving the
+                        platform, please create issues and create PR when changes are ready to be merged.
+                    </h5>
+
+
+                </div>
+
+                <div id="subscribe-window" class="section-gap">
+                    <h2 class="pt-4">Subscribe for Updates</h2>
+
+                    <h5 class="font-weight-300"> Please enter your email address below and we will send you the recent
+                        updates
+                    </h5>
+                </div>
+
+                <div id="gitHub-window" class="section-gap">
+                    <h2 class="pt-4">GitHub Repository</h2>
+                    <h5 class="font-weight-300">
+                    </h5>
+                </div>
+
+                <div id="license-window" class="section-gap">
+                    <h2 class="pt-4">License</h2>
+                    <h5 class="font-weight-300">
+                    </h5>
+                </div>
             </div>
-            <div id="setup-window" class="section-gap">
-                <h2 class="pt-4">Quick start:-</h2>
-
-                <h5 class="font-weight-300 mb-4"> Majority of the customization is done on the HTML5 client, therefore, in order to set up this version you need to find a suitable version of the entire project or use version 2.2-dev and follow the below steps.
-
-                </h5>
-
-                <fieldset>
-                    <legend>Steps:</legend>
-                    <ol class="list-group d" >
-                        <li class="list-group-item">Clone bigbluebutton repository from
-                          <a href="https://github.com/openglm/bigbluebutton">https://github.com/openglm/bigbluebutton</a>.
-                        </li>
-                        <li class="list-group-item">Change directory to bigbluebutton-html5.
-                        </li>
-                        <li class="list-group-item">Install meteor ( <a href="https://www.meteor.com/install">https://www.meteor.com/install</a>):
-                            curl https://install.meteor.com/ | sh
-                        </li>
-                        <li class="list-group-item">
-                            Update below configuration located in /cloned_code_folder/private/config/settings.yml:
-                            Kurento -> wsUrl
-                            Note -> url
-                            (Note: we can get the current configuration located in
-                            /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml)
-
-                        </li>
-                        <li class="list-group-item">Build the project :
-                            meteor build --directory ../app
-                        </li>
-                        <li class="list-group-item"> Install dependencies:
-                            cd ~/app/bundle/programs/server && npm install
-                        </li>
-                        <li class="list-group-item"> Copy the bundle to the deployment location:
-                            sudo cp -r ~/app/bundle/* /usr/share/meteor/bundle/
-                        </li>
-                        <li class="list-group-item"> Restart the bbb-html5 service:
-                            sudo systemctl restart bbb-html5
-                        </li>
-
-                    </ol>
-                </fieldset>
-            </div>
-
-            <div id="request-window" class="section-gap">
-                <h2 class="pt-4">Request Customization:-</h2>
-
-                <h5 class="font-weight-300 mb-4"> Please raise an issue on our github repository if you find any problems or need additional customization. We prioritize issues and assure to reach out to the community if anyone is interested to help with customization. You can also request for a custom development from experts who are part of our community. They will be happy to assist you with your requests. 
-                </h5>
-
-                <h5  class="font-weight-300">
-                    Please send out the custom development needs to 
-                    <a href="mailto:openglm.connect@gmail.com">openglm.connect@gmail.com</a>
-                     and experts from the community will approach you soon. They may charge for custom development or offer you alternatives.
-                </h5>            
-            </div>
-
-            <div id="contribute-window" class="section-gap">
-                <h2 class="pt-4">How to contribute?:-</h2>
-
-                <h5 class="font-weight-300 mb-4"> If you want to join our community and help us in improving the platform, please create issues and create PR when changes are ready to be merged.
-                </h5>
-
-            
-            </div>
-
-            <div id="subscribe-window" class="section-gap">
-                <h2 class="pt-4">Subscribe for Updates:-</h2>
-
-                <h5 class="font-weight-300"> Please enter your email address below and we will send you the recent updates
-                </h5>        
-            </div>
-            
-            <div id="gitHub-window" class="section-gap">
-                <h2 class="pt-4">GitHub Repository:-</h2>
-                <h5 class="font-weight-300"> 
-                </h5>        
-            </div>
-
-            <div id="license-window" class="section-gap">
-                <h2 class="pt-4">License:-</h2>
-                <h5 class="font-weight-300"> 
-                </h5>        
-            </div>
-
 
         </section>
 
@@ -309,12 +386,28 @@
     <script src="./js/bootstrap.min.js"></script>
 
     <script>
-        $(document).ready(function(){
-            
-            $('.left-btn').click(function(){
-                
+        $(document).ready(function () {
+            $('.left-btn').click(function () {
                 $('#left-section').toggleClass('active-left')
-            }) 
+            });
+
+            $('.drop-downlist').click(function () {
+                $('.dropdown-menu-custom').toggleClass('open');
+                $('.arrow').toggleClass('uparrow')
+            });
+
+            $('.dropdown-menu-custom').click(function () {
+                $('.dropdown-menu-custom').toggleClass('open');
+                $('.arrow').toggleClass('uparrow');
+                //  $('.dropdown-menu-custom a').find('active-menu').siblings().removeClass('active-menu');
+            });
+            $('.dropdown-menu-custom a').click(function () {
+                $('.dropdown-menu-custom a.active-menu').removeClass('active-menu');
+                $(this).addClass('active-menu');
+            })
+
+
+
         });
     </script>
 </body>
